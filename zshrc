@@ -73,4 +73,4 @@ alias ls='ls --color=auto'
 alias gr="grep -rnH --color"
 alias gl="git log --all --graph --decorate"
 alias gc="git commit -m"
-
+alias less="less -R"
