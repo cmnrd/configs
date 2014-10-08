@@ -86,3 +86,5 @@ alias ga="git add"
 aliais less="less -R"
 
 alias la="ls -lah"
+
+alias fn="find -name"
