@@ -83,7 +83,7 @@ alias gc="git commit -m"
 alias gs="git status"
 alias ga="git add"
 
-aliais less="less -R"
+alias less="less -R"
 
 alias la="ls -lah"
 
