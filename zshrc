@@ -88,3 +88,5 @@ alias less="less -R"
 alias la="ls -lah"
 
 alias fn="find -name"
+
+. ~/.zshrc_local
