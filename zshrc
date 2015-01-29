@@ -82,6 +82,11 @@ alias gl="git log --all --graph --decorate"
 alias gc="git commit -m"
 alias gs="git status"
 alias ga="git add"
+alias gf="git fetch"
+alias gd="git diff"
+alias gp="git push"
+alias gco="git checkout"
+alias gre="git rebase"
 
 alias less="less -R"
 
