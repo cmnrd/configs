@@ -53,6 +53,12 @@ let g:rehash256 = 1
 colorscheme molokai
 syntax enable
 
-" show tabs
-set list lcs=tab:\»\
+" ----------------------------------------------------------------------------
+" Default tab settings
+
+set tabstop=4
+set shiftwidth=4
+
+" Show tabs
+set list lcs=tab:\»\ "(extra space)
 
