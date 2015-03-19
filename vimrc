@@ -38,6 +38,9 @@ Plugin 'Yggdroot/indentLine'
 " Insert spaces when hitting tab in middle of line
 Plugin 'vim-scripts/Smart-Tabs'
 
+" status line
+Plugin 'bling/vim-airline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,3 +65,16 @@ set shiftwidth=4
 " Show tabs
 set list lcs=tab:\»\ "(extra space)
 
+" ----------------------------------------------------------------------------
+" Appearance
+
+" always show status line
+set laststatus=2
+set number
+set colorcolumn=80
+
+" ----------------------------------------------------------------------------
+" Airline
+
+" only check for trailing white spaces
+let g:airline#extensions#whitespace#checks = [ 'trailing' ]
