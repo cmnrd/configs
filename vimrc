@@ -69,6 +69,8 @@ set shiftwidth=4
 " Show tabs
 set list lcs=tab:\»\ ,trail:·
 
+let g:indentLine_char = '┊'
+
 " ----------------------------------------------------------------------------
 " Appearance
 
