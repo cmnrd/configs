@@ -87,3 +87,5 @@ set colorcolumn=80
 
 " only check for trailing white spaces
 let g:airline#extensions#whitespace#checks = [ 'trailing' ]
+
+let g:airline_powerline_fonts=1
