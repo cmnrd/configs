@@ -85,6 +85,9 @@ set laststatus=2
 set number
 set colorcolumn=80
 
+highlight ColorColumnError ctermfg=219 ctermbg=89 guifg=#E6DB74 guibg=#1E0010
+call matchadd('ColorColumnError', '\%81v', 100)
+
 " ----------------------------------------------------------------------------
 " Airline
 
