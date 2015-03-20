@@ -67,7 +67,7 @@ set tabstop=4
 set shiftwidth=4
 
 " Show tabs
-set list lcs=tab:\»\ "(extra space)
+set list lcs=tab:\»\ ,trail:·
 
 " ----------------------------------------------------------------------------
 " Appearance
