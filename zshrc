@@ -90,7 +90,7 @@ alias gre="git rebase"
 
 alias less="less -R"
 
-alias ll="ls -lah"
+alias ll="ls -lh"
 
 alias fn="find -name"
 
