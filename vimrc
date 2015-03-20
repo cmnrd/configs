@@ -1,3 +1,7 @@
+" Set encoding
+set encoding=utf-8
+set fileencoding=utf-8
+
 " force vim to source .vimrc file if it present in working directory
 set exrc
 set secure
