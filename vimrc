@@ -51,6 +51,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " git support
 Plugin 'tpope/vim-fugitive'
 
+" File Manager
+Plugin 'scrooloose/nerdtree'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -97,3 +100,11 @@ let g:airline#extensions#whitespace#checks = [ 'trailing' ]
 let g:airline_powerline_fonts=1
 
 let g:airline#extensions#tabline#enabled = 1
+
+" ----------------------------------------------------------------------------
+" NERDTree
+
+" close on open
+let g:NERDTreeQuitOnOpen = 1
+
+map <C-d> :NERDTreeToggle<CR>
