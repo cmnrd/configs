@@ -54,6 +54,9 @@ Plugin 'tpope/vim-fugitive'
 " File Manager
 Plugin 'scrooloose/nerdtree'
 
+" Fuzzy file search
+Plugin 'kien/ctrlp.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -108,3 +111,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeQuitOnOpen = 1
 
 map <C-d> :NERDTreeToggle<CR>
+
+" ----------------------------------------------------------------------------
+" CtrlP
+
+" key mapping
+let g:ctrlp_map = '<c-p>'
