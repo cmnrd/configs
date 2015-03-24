@@ -57,6 +57,12 @@ Plugin 'scrooloose/nerdtree'
 " Fuzzy file search
 Plugin 'kien/ctrlp.vim'
 
+" Easily surround words with parantheses, brackts, etc.
+Plugin 'tpope/vim-surround'
+
+" Better Plugin support for repeat ('.') 
+Plugin 'tpope/vim-repeat'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
