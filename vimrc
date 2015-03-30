@@ -72,6 +72,8 @@ filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 
+" fix backspace and delete keys
+set backspace=indent,eol,start
 
 " ----------------------------------------------------------------------------
 " Set-up color scheme (Molokai)
