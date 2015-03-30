@@ -66,6 +66,9 @@ Plugin 'tpope/vim-repeat'
 " Auto completition
 Plugin 'Valloric/YouCompleteMe'
 
+" Fast comment lines and block
+Plugin 'scrooloose/nerdcommenter'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
