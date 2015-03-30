@@ -79,7 +79,7 @@ alias ls='ls --color=auto'
 
 alias gr="grep -rnH --color"
 alias gl="git log --all --graph --decorate"
-alias gc="git commit -m"
+alias gc="git commit"
 alias gs="git status"
 alias ga="git add"
 alias gf="git fetch"
