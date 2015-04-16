@@ -132,3 +132,8 @@ map <C-d> :NERDTreeToggle<CR>
 " key mapping
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPMixed'
+
+" ----------------------------------------------------------------------------
+" YCM
+
+let g:ycm_autoclose_preview_window_after_insertion = 1
