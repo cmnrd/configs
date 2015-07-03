@@ -69,6 +69,12 @@ Plugin 'Valloric/YouCompleteMe'
 " Fast comment lines and block
 Plugin 'scrooloose/nerdcommenter'
 
+" User defined operators
+Plugin 'kana/vim-operator-user'
+
+" Clang format
+Plugin 'rhysd/vim-clang-format'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -116,8 +122,6 @@ let g:airline#extensions#whitespace#checks = [ 'trailing' ]
 
 let g:airline_powerline_fonts=1
 
-let g:airline#extensions#tabline#enabled = 1
-
 " ----------------------------------------------------------------------------
 " NERDTree
 
@@ -137,3 +141,20 @@ let g:ctrlp_cmd = 'CtrlPMixed'
 " YCM
 
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" ----------------------------------------------------------------------------
+" Clang Format
+
+let g:clang_format#style_options = {
+    \ "Standard" : "C++11",
+    \ "BreakBeforeBraces" : "Allman",
+    \ "ColumnLimit" : "80",
+    \ "BinPackParameters" : "false"}
+
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+" if you install vim-operator-user
+autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
+" Toggle auto formatting:
+nmap <Leader>C :ClangFormatAutoToggle<CR>
