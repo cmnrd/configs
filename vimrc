@@ -51,6 +51,9 @@ Plugin 'octol/vim-cpp-enhanced-highlight'
 " git support
 Plugin 'tpope/vim-fugitive'
 
+" key mappings
+Plugin 'tpope/vim-unimpaired'
+
 " File Manager
 Plugin 'scrooloose/nerdtree'
 
@@ -158,3 +161,5 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 " Toggle auto formatting:
 nmap <Leader>C :ClangFormatAutoToggle<CR>
+
+so ~/.vimrc_local
