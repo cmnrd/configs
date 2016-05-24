@@ -148,11 +148,12 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 " ----------------------------------------------------------------------------
 " Clang Format
 
+let g:clang_format#code_style = 'mozilla'
 let g:clang_format#style_options = {
     \ "Standard" : "C++11",
-    \ "BreakBeforeBraces" : "Allman",
     \ "ColumnLimit" : "80",
-    \ "BinPackParameters" : "false"}
+    \ "UseTab" : "Never",
+    \ "TabWidth" : "4", }
 
 " map to <Leader>cf in C++ code
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
