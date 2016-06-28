@@ -153,7 +153,9 @@ let g:clang_format#style_options = {
     \ "Standard" : "C++11",
     \ "ColumnLimit" : "80",
     \ "UseTab" : "Never",
-    \ "TabWidth" : "4", }
+    \ "TabWidth" : "4",
+    \ "BinPackParameters" : "false",
+    \ "BinPackArguments" : "false"}
 
 " map to <Leader>cf in C++ code
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
