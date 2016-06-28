@@ -2,7 +2,7 @@
 
 sudo pacman -Syu
 
-sudo pacman --needed -S zsh openssh vim htop bmon iotop binutils gcc make scons cmake clang-tools-extra
+sudo pacman --needed -S zsh openssh vim htop bmon iotop make scons cmake clang-tools-extra
 
 cd ~
 
