@@ -78,6 +78,12 @@ Plugin 'kana/vim-operator-user'
 " Clang format
 Plugin 'rhysd/vim-clang-format'
 
+" Syntastic
+Plugin 'scrooloose/syntastic'
+
+" autopep8
+Plugin 'tell-k/vim-autopep8'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
