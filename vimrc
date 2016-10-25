@@ -171,4 +171,7 @@ autocmd FileType c,cpp,objc map <buffer><Leader>x <Plug>(operator-clang-format)
 " Toggle auto formatting:
 nmap <Leader>C :ClangFormatAutoToggle<CR>
 
+" expand tabs in tex mode
+autocmd Filetype tex setlocal ts=2 sw=2 expandtab
+
 so ~/.vimrc_local
