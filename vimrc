@@ -174,4 +174,7 @@ nmap <Leader>C :ClangFormatAutoToggle<CR>
 " expand tabs in tex mode
 autocmd Filetype tex setlocal ts=2 sw=2 expandtab
 
+" set the filetype to tex for pgf files
+au BufNewFile,BufRead *.pgf set filetype=tex
+
 so ~/.vimrc_local
