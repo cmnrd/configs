@@ -177,4 +177,7 @@ autocmd Filetype tex setlocal ts=2 sw=2 expandtab
 " set the filetype to tex for pgf files
 au BufNewFile,BufRead *.pgf set filetype=tex
 
+" Set spell on git commits
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
 so ~/.vimrc_local
